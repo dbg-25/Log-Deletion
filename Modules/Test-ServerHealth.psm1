@@ -3,7 +3,7 @@ function Test-serverHealth {
     [cmdletbinding()]
     param(
         [parameter(mandatory=$true,valuefrompipeline=$true)]
-        [string]$ip,
+        [string[]]$ip,
         [int]$timeSec = 5
     )
 
